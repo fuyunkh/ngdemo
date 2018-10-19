@@ -1,8 +1,10 @@
 # Ngdemo
+项目基于https://www.cnblogs.com/seesharply/category/925525.html系列文章编写而成
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
 ## Development server
+先执行npm install -g 下载相关的依赖
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 

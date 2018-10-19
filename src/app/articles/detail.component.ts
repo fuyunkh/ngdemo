@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 // import 'rxjs/add/operator/switchMap';
@@ -17,7 +17,8 @@ export class DetailComponent implements OnInit {
     constructor(
         // private bService: BlogService,
         private route: ActivatedRoute,
-        private location: Location
+        private location: Location,
+        private router: Router
     ) { }
 
     ngOnInit(): void {
@@ -31,5 +32,9 @@ export class DetailComponent implements OnInit {
     }
     back() {
         this.location.back();
+    }
+
+    doComment() {
+        this.router.navigate(['comment',{id:this.blog.id,title:this.blog.title}], { relativeTo: this.route });
     }
 }
