@@ -16,6 +16,7 @@ import { TodotasksModule } from './todotasks/todotasks.module';
 import { CommentComponent } from './comment/comment.component';
 
 import { CommentService } from './utils/comment.service';
+import { TaskDetailComponent } from './todoTasks/task-detail/task-detail.component';
 
 
 
@@ -26,7 +27,8 @@ import { CommentService } from './utils/comment.service';
     AppComponent,
     ArticleComponent,
     DetailComponent,
-    CommentComponent
+    CommentComponent,
+    TaskDetailComponent
   ],
   // 外部模块
   imports: [

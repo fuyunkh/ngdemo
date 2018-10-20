@@ -35,6 +35,7 @@ export class DetailComponent implements OnInit {
     }
 
     doComment() {
-        this.router.navigate(['comment',{id:this.blog.id,title:this.blog.title}], { relativeTo: this.route });
+        this.router.navigate(['comment', { id: this.blog.id, title: this.blog.title }],
+            { relativeTo: this.route });
     }
 }
